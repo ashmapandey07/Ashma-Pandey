@@ -4,7 +4,8 @@ import numpy as np
 import pickle
 import base64
 
-
+np.bool = np.bool_
+np.object = object
 
 @st.cache(suppress_st_warning=True)
 def get_fvalue(val):
